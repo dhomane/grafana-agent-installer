@@ -152,5 +152,5 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet
 
 # Delete Temporary Files
 
-Remove-Item "C:\grafana-agent-installer.exe.zip" -Force -Confirm:$false
-Remove-Item "C:\grafana-agent-installer.exe" -Force -Confirm:$false
+Remove-Item "C:\grafana-agent-installer.exe.zip" -Force -Recurse -Confirm:$false
+Remove-Item "C:\grafana-agent-installer.exe" -Force -Recurse -Confirm:$false
