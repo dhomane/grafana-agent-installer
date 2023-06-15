@@ -49,6 +49,9 @@ Start-Process -FilePath "C:\grafana-agent-installer.exe\grafana-agent-installer.
 
 
 $content = @"
+server:
+  log_level: warn
+  
 integrations:
 
   agent:
@@ -88,8 +91,12 @@ metrics:
     scrape_timeout: 30s
 
     external_labels:
-
+    
+      stage: live
+      env_type: prod
+      region: us-east-1
       cloud_platform: AWS
+      customer_id: C002
 
   wal_directory: /tmp/grafana-agent-wal
 "@
