@@ -1,3 +1,17 @@
+# Welcome message
+
+Write-Host "======================================================================"
+Write-Host ""
+Write-Host "Welcome to Grafana Agent Installer"
+Write-Host ""
+Write-Host "======================================================================"
+
+
+Write-Host "Please enter the information requested below:"
+
+Write-Host ""
+Write-Host "======================================================================"
+
 # Prompt user for Grafana username and password
 
 $username = Read-Host "Enter the Grafana username"
